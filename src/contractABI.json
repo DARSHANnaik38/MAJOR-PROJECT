@@ -1,0 +1,31 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        { "internalType": "string", "name": "_fileName", "type": "string" },
+        { "internalType": "string", "name": "_ipfsHash", "type": "string" }
+      ],
+      "name": "storeFile",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getUserFiles",
+      "outputs": [
+        {
+          "components": [
+            { "internalType": "string", "name": "fileName", "type": "string" },
+            { "internalType": "string", "name": "ipfsHash", "type": "string" }
+          ],
+          "internalType": "struct FileStorage.File[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ]
+}
